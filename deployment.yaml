@@ -18,7 +18,7 @@ spec:
         app: httpd
     spec:
       containers:
-      - image: httpd
+      - image: yasseralhwetat/httpd
         name: httpd
         resources: {}
 status: {}
