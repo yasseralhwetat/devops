@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: httpd
   name: httpd
@@ -10,15 +9,11 @@ spec:
   selector:
     matchLabels:
       app: httpd
-  strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: httpd
     spec:
       containers:
-      - image: yasseralhwetat/httpd
+      - image: yasseralhwetat/httpd:v10
         name: httpd
-        resources: {}
-status: {}
